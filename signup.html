@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            background-image: url(./backgroundimglogin2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .signupform{
+            background-color: transparent;
+            border: 2px solid black;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 20px black;
+            width: 420px;
+            color: white;
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+        .input-box{
+            height: 50px;
+            width: 100%;
+            margin: 30px 0;
+            position: relative;
+
+        }
+        .input-box input{
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            border: 2px solid black;
+            border-radius: 50px;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 45px 20px 20px;
+            
+        }
+        .signupform h1{
+            text-align: center;
+            font-size: 36px;
+        }
+        .input-box input::placeholder{
+            color: white;
+        }
+        .botton{
+            width: 100%;
+            height: 45px;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            box-shadow: 0 0 10px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="signupform">
+        <form>
+            <h1>Sign-up</h1>
+            <div class="input-box">
+                <input type="text" placeholder="First name" required>
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Last name" required>
+            </div>
+
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Password" required>
+            </div>
+
+            <button type="submit" class="botton">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
